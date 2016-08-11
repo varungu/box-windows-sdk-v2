@@ -8,6 +8,7 @@ namespace Box.V2.Config
     public static class Constants
     {
         /*** Base API URIs ***/
+        public const string BoxAccountHostUriString = "https://account.box.com/api/";
         public const string BoxApiHostUriString = "https://app.box.com/api/";
         public const string BoxApiUriString = "https://api.box.com/2.0/";
         public const string BoxUploadApiUriString = "https://upload.box.com/api/2.0/";
@@ -32,7 +33,7 @@ namespace Box.V2.Config
         public const string FileVersionRetentionsString = @"file_version_retentions";
 
         /*** API Full Endpoint Strings ***/
-        public const string AuthCodeEndpointString = BoxApiHostUriString + AuthCodeString;
+        public const string AuthCodeEndpointString = BoxAccountHostUriString + AuthCodeString;
         public const string FoldersEndpointString = BoxApiUriString + FoldersString;
         public const string GroupsEndpointString = BoxApiUriString + GroupsString;
         public const string GroupMembershipEndpointString = BoxApiUriString + GroupMembershipString;
